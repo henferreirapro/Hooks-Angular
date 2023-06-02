@@ -37,3 +37,18 @@ Comando para criar um component generico: <br>
   * Nesse caso importamos o @Input na propriedade nome para que ele possa receber uma mudança de valor.
 
   * No nosso componente podemos add a propriedade nome para colocarmos as mudanças dentro dela, nesse caso uma string com a palavra produto.
+
+<span>DoCheck</span> <br>
+  * O DoCheck é executado quando as propriedades dos componentes são verificadas, como um click por exemplo.
+  
+  * Ele executa 4 sub eventos, o AfterContentInit,  o AfterContentChecked, AfterViewInit e o AfterViewChecked.
+
+* <span>AfterContentInit</span> 
+    * AfterContentInit executa quando o Angular realiza a projeção do conteúdo no component.
+*  <span>AfterContentChecked</span>
+    * AfterContentChecked executa quando o conteúdo tem uma alteração detectada.
+* <span>AfterViewInit</span>    
+    * AfterViewInit executa depois que um component é totalmente iniciado.
+* <span>AfterViewChecked</span>
+    * AfterViewChecked executa quando a visualização  do componente é verificada pelo algoritmo de verificação do Angular.
+

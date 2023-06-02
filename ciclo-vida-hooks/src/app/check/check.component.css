@@ -1,0 +1,43 @@
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(216, 163, 99);
+  align-items: center;
+  border-radius: .2rem;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.btnContainer {
+  display: flex;
+  background-color: rgb(228, 179, 119);
+  padding: .2rem 3.14rem;
+  border-radius: .4rem .4rem 0 0;
+  flex-direction: row;
+}
+
+button {
+  margin: .2rem;
+  padding: .875rem;
+  border-radius: .4rem;
+  margin-bottom: .5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.remover {
+  background-color: rgb(233, 72, 72);
+  border: .2rem rgb(233, 72, 72) solid;
+}
+
+.adicionar {
+  background-color: rgb(52, 226, 52);
+  border: .2rem rgb(52, 226, 52) solid;
+}

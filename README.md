@@ -52,3 +52,7 @@ Comando para criar um component generico: <br>
 * <span>AfterViewChecked</span>
     * AfterViewChecked executa quando a visualização  do componente é verificada pelo algoritmo de verificação do Angular.
 
+<span>OnDestroy</span>
+  * Ele serve para destruir um component, dessa forma podemos destruir o componente quando não precisarmos mais exibi-lo na tela, assim evitamos que ele seja executado por algum cache ou que sobrecarregue a nossa pagina por algum erro.
+  
+  * Nesse exemplo add um botão Destruir para que quando ele fosse clicado pudesse destruir o component do Contador. 

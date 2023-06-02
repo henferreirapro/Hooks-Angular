@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ciclo-vida-hooks';
+  estadoComponentCheck: boolean = true;
+
+  descartarCheck():void {
+    this.estadoComponentCheck = false;
+  }
 }

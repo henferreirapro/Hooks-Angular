@@ -3,6 +3,8 @@
   <!-- <app-title nome="Produto 1"></app-title>
     <app-title nome="Produto 2"></app-title> -->
   
-  <app-check></app-check>
+  <app-check *ngIf="estadoComponentCheck"></app-check>
+
+  <button (click)="descartarCheck()">Destruir</button>
   <router-outlet></router-outlet>
 </main>

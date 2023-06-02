@@ -1,4 +1,4 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnInit,Input } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnInit,Input, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-check',
@@ -11,11 +11,16 @@ DoCheck,
 AfterContentChecked,
 AfterContentInit,
 AfterViewChecked,
-AfterViewInit
+AfterViewInit,
+OnDestroy
 {
   @Input() quantidade: number = 0;
 
   constructor() {}
+
+  ngOnDestroy(): void {
+    console.log(`Component Contador destruido.`);
+  }
 
   adicionar() {
     this.quantidade += 1;
